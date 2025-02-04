@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit URL Switch",
+  "version": "1.0",
+  "description": "A simple extension to switch Reddit URLs. Allows the user to switch between old reddit and new reddit with a single click.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "permissions": ["tabs"]
+}
